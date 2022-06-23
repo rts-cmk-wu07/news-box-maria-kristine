@@ -3,12 +3,12 @@ import { css } from "@emotion/react";
 import DarkModeToggle from "./DarkModeToggle";
 import Navbar from "./Navbar";
 import { IoIosArrowBack } from "react-icons/io";
-import TopicToggle from "./TopicToggle";
+
 import SettingsCategorie from "./settingsCategorie";
 import { useContext } from "react";
 import ThemeContext from "../ThemeContext";
 
-const Settings = ({ article }) => {
+const Settings = () => {
   const { darkMode } = useContext(ThemeContext);
   const styles = {
     settings: css`

@@ -6,11 +6,13 @@ import DropdownBar from "./DropdownBar";
 
 import { FiInbox } from "react-icons/fi";
 import { IoSettingsSharp } from "react-icons/io5";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import ThemeContext from "../ThemeContext";
+
 
 const Inbox = () => {
   const {darkMode} = useContext(ThemeContext);
+
   const { data: article } = useFetch(
     "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=O930Ee99BSQCTnPTJwq7qpSKW6vZ63tH"
   );

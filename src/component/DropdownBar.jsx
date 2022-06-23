@@ -2,9 +2,9 @@
 import { css } from "@emotion/react";
 import { IoIosArrowBack } from "react-icons/io";
 import { FiInbox } from "react-icons/fi";
-import { IconContext } from "react-icons";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import ThemeContext from "../ThemeContext";
+import ToggleSetting from "../ThemeContext";
 
 import {
   SwipeableList,
@@ -17,11 +17,24 @@ import Collapsible from "react-collapsible";
 
 const DropdownBar = ({ article }) => {
   const { darkMode } = useContext(ThemeContext);
+  const { categorieSettings, setCategorieSettings } = useContext(ToggleSetting);
   let categorie = article.results.map((categorie) => categorie.section);
 
   let sortedCategorie = categorie.filter((element, index) => {
     return categorie.indexOf(element) === index;
   });
+
+
+  useEffect(() => {
+    setCategorieSettings({
+      ...sortedCategorie.reduce((acc, categorie) => {
+        acc[categorie] = true;
+        return acc;
+      }, {}),
+    });
+  }, []);
+
+  console.log(categorieSettings);
 
   const styles = {
     dropdownBar: css`

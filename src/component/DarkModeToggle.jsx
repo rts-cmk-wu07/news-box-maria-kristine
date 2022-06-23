@@ -5,13 +5,12 @@ import ThemeContext from "../ThemeContext";
 import { useContext } from "react";
 
 const DarkModeToggle = () => {
-
   const { darkMode, setDarkMode } = useContext(ThemeContext);
-  
+
   const handleTheme = () => {
     setDarkMode(!darkMode);
     localStorage.setItem("darkMode", darkMode);
-  }
+  };
   const styles = {
     button: css`
       width: 178px;
