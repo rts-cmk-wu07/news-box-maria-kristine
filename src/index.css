@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+/* base styles */
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+body{
+  margin: 0 auto;
+
+}
+.navbar{
+  background-color: #fff;
+}
+.navbar-dark{
+  background-color: rgb(152, 152, 152);
+}
+.header{
+  color: #000;
+}
+.header-dark{
+  color: #fff;
+}
+.icon{
+  color: #000;
+}
+.icon-dark{
+  color: #fff;
+}
+.search{
+  background-color: #fff;
+  border-bottom: 1px solid #e0e1e2;
+}
+.search-dark{
+  background-color: #333;
+  border-bottom: 1px solid #898989;
+}
+.newsPost{
+  background-color: #fff;
+}
+.newsPost-dark{
+  background-color: #333;
+  color: #fff;
+}
+.newsPostSection{
+  background-color: #fff;
+}
+.newsPostSection-dark{
+  background-color: #333;
+}
+.newsPostHeader{
+  color: #000;
+}
+.newsPostHeader-dark{
+  color: #fff;
+}
+.newsPostText{
+  color: #000;
+}
+.newsPostText-dark{
+  color: #fff;
+}
+.iconSurf{
+  box-shadow: 3px 5px 10px 4px #efefef;
+}
+.iconSurf-dark{
+  box-shadow: 3px 5px 10px 4px #505050;
+}
+.dropdownBar{
+  background-color: #fff;
+  border-bottom: 1px solid #e0e1e2;
+}
+.dropdownBar-dark{
+  background-color: #333;
+  border-bottom: 1px solid #898989;
+}
+.dropDownBarHeader-dark{
+  color: #fff;
+}
+.dropDownBarHeader{
+  color: #000;
+}
+.settings{
+  background-color: #eceff0;
+}
+.settings-dark{
+  background-color: #c6c6c6;
+}
+.settingsText{
+  color: #6e8ca0;
+}
+.settingsText-dark{
+  color: rgb(68, 68, 68);
+}
+.categorieSection{
+  background-color: #fff;
+}
+.categorieSection-dark{
+  background-color: rgb(120, 120, 120);
+}
+.categorieHeader-dark{
+  color: #000;
+}
+.categorieHeader-dark{
+  color: #fff;
+}
