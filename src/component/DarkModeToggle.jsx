@@ -1,12 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import React from "react";
 import ThemeContext from "../ThemeContext";
 import { useContext } from "react";
 
 const DarkModeToggle = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
-
+  console.log(darkMode);
   const handleTheme = () => {
     setDarkMode(!darkMode);
     localStorage.setItem("darkMode", darkMode);

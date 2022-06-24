@@ -1,6 +1,5 @@
 import { createContext } from "react";
 
-const ThemeContext = createContext({darkMode:false});
-// const ToggleSetting = createContext()
+const ThemeContext = createContext({ darkMode: false });
 
 export default ThemeContext;

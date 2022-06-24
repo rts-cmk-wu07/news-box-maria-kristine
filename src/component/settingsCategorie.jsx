@@ -4,7 +4,7 @@ import TopicToggle from "./TopicToggle";
 import { useContext } from "react";
 import ThemeContext from "../ThemeContext";
 
-const SettingsCategorie = ({ article }) => {
+const SettingsCategorie = () => {
   const { darkMode } = useContext(ThemeContext);
   const styles = {
     categorieSection: css`
@@ -18,7 +18,6 @@ const SettingsCategorie = ({ article }) => {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      /* border-bottom: 1px solid #f0f3f4; */
       padding: 19.5px 23px;
       & h4 {
         text-transform: uppercase;

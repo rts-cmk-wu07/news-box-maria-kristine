@@ -5,9 +5,11 @@ import Navbar from "./Navbar";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoSettingsSharp } from "react-icons/io5";
 
+
 import Search from "./Search";
 
 const Archive = () => {
+
   const styles = {
     archive: css`
       background-color: #fff;

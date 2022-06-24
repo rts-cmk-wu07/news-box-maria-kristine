@@ -71,8 +71,8 @@ body{
   border-bottom: 1px solid #e0e1e2;
 }
 .dropdownBar-dark{
-  background-color: #333;
-  border-bottom: 1px solid #898989;
+  background-color: rgb(147, 147, 147);
+  border-bottom: 1px solid #636363;
 }
 .dropDownBarHeader-dark{
   color: #fff;
