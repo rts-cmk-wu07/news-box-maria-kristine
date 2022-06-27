@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="/inbox" element={<Inbox />} />
+          <Route path="/" element={<Inbox />} />
           <Route path="/archive" element={<Archive />} />
           <Route path="/settings" element={<Settings />} />
         </Route>
